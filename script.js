@@ -314,8 +314,8 @@ function initThreeJS() {
     loader.load('flower.gltf', 
         (gltf) => {
             roseModel = gltf.scene;
-            roseModel.scale.set(2.5, 2.5, 2.5);
-            roseModel.position.y = -15.5;
+            roseModel.scale.set(3.5, 3.5, 3.5);
+            roseModel.position.y = -12.5;
             roseModel.visible = false;
             scene.add(roseModel);
             updateTargetArrayToHeartShape();
