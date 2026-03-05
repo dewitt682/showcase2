@@ -314,7 +314,7 @@ function initThreeJS() {
     let roseModel = null;
 
     // 根据设备自适应缩放（电脑端 0.5，手机端略微缩小为 0.35 防止越界）
-    const finalScale = window.innerWidth < 768 ? 3.5 : 3.5;
+    const finalScale = window.innerWidth < 768 ? 1.5 : 1.5;
 
     // 立刻计算爱心形状，不等模型下载
     function updateTargetArrayToHeartShape() {
@@ -531,6 +531,7 @@ window.addEventListener('resize', () => {
     fireworksCanvas.height = window.innerHeight;
 
 });
+
 
 
 
