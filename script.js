@@ -314,7 +314,7 @@ function initThreeJS() {
     let roseModel = null;
 
     // 根据设备自适应缩放（电脑端 0.5，手机端略微缩小为 0.35 防止越界）
-    const finalScale = window.innerWidth < 768 ? 0.35 : 0.5;
+    const finalScale = window.innerWidth < 768 ? 0.5 : 0.5;
 
     // 立刻计算爱心形状，不等模型下载
     function updateTargetArrayToHeartShape() {
@@ -348,7 +348,7 @@ function initThreeJS() {
     loader.load('flower.gltf', 
         (gltf) => {
             roseModel = gltf.scene;
-            roseModel.position.y = -0.5;
+            roseModel.position.y = -1.5;
             scene.add(roseModel);
 
             // 修复网络延迟问题：如果下载完时已经到了出场时间(phase=2)，直接出场！
@@ -529,4 +529,5 @@ function initThreeJS() {
 window.addEventListener('resize', () => {
     fireworksCanvas.width = window.innerWidth;
     fireworksCanvas.height = window.innerHeight;
+
 });
