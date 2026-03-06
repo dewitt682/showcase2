@@ -194,7 +194,7 @@ body {
 /* 2. 时间轴区域 */
 #timeline-container {
     position: absolute;
-    top: 10%;
+    top: 3%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
