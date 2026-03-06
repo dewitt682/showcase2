@@ -189,6 +189,7 @@ body {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 2px;
+    align-items: center;
 }
 
 /* 2. 时间轴区域 */
